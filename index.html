@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <link type="text/css" rel="stylesheet" href="./static/lib/css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="./static/lib/css/main.css" />
+
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Playball|Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat|Playball|Roboto+Condensed|Ultra"
+    rel="stylesheet">
+
+
+
+  <title>South Florida Safety Program</title>
+
+  <style>
+    .slider {
+      text-align: center;
+    }
+
+  </style>
+
+
+</head>
+
+<body>
+  <div id="app">
+
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img class="responsive-img" src="./static/images/c1.jpg" alt="ci">
+          <div class="caption center-align">
+            <h2 class="white-text">Drugs</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">The use of drugs and their effects on the body
+            </h5>
+
+          </div>
+        </li>
+        <li>
+          <img class="responsive-img" src="./static/images/e1.jpg" alt="ci">
+          <div class="caption left-align">
+            <h2 class="black-text">Driving</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">The use of drugs and their effects on driving
+            </h5>
+
+          </div>
+        </li>
+        <li>
+          <img class="responsive-img" src="./static/images/e2.jpg" alt="ci">
+          <div class="caption right-align">
+            <h2 class="white-text">Responsible driving</h2>
+            <h5 class="light white-text text-lighten-3 hide-on-small-only"> Safety belts and car seats
+            </h5>
+          </div>
+        </li>
+      </ul>
+      <img class="responsive-img spinner" src="./static/images/spinner.gif" alt="Loading...">
+    </section>
+
+
+
+  </div>
+  <!-- built files will be auto injected -->
+  <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified JavaScript -->
+
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./static/lib/js/materialize.min.js"></script>
+
+
+
+  <script src="./static/book/book.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+
+      // Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+
+      // Show sections
+      $('.section').fadeIn();
+
+      // Init Collapse to course
+      //$(".collapsible").collapsible();
+      $(".carousel").carousel();
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>
